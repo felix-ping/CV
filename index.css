@@ -21,7 +21,7 @@ body{
 .app{ 
   max-width: 995px;
   min-width: 700px;
-  padding: 100px; 
+  padding: 45px 80px  ; 
   border: 1px solid #ccc;
   margin: 0 auto;
   background-color: #fff;
@@ -33,10 +33,9 @@ header{
 /* 头部左侧信息 */
 header .message{
   width: 250px;
-  height: 165px;
   flex-grow: 1;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: -5px;
 }
 header .message li{
   padding: 6px 0;
@@ -57,28 +56,28 @@ header .message span{
 /* 头部右侧照片 */
 header .photoWrapper{
   background-color: #a6a9ac;
-  width: 355px;
-  height: 225px;
+  width: 320px;
+  height: 170px;
   position: relative;
 }
 .photoWrapper .position{
   width: 100px;
   height: 50px;
-  background: url('./7.png') no-repeat;
+  background: url('./img/7.png') no-repeat;
   position: absolute;
   top: 0px;
   left: -100px;
 }
 .photoWrapper .position .positionMsg{
-  width: 368px;
+  width: 350px;
   height: 27px;
   background-color: rgb(240,123,123);
   position: absolute;
   top: 7px; 
-  left: 100px;
+  left: 95px;
   font-weight: bold;
   font-size: 16px;
-  text-align: right;
+  text-align: center;
   padding-right: 25px;
   line-height: 27px;
 }
@@ -86,8 +85,8 @@ header .photoWrapper{
   width: 132px;
   height: 72px;
   position: absolute;
-  left: 35px;
-  top: 45px;
+  left: 38px;
+  top: 60px;
   background-color: #808285;
   border-radius: 10px;
   color: #fff;
@@ -97,22 +96,25 @@ header .photoWrapper{
 
 }
 .photoWrapper .photo{
-  width: 108px;
-  height: 142px;
+  width: 80px;
+  height: 110px;
   position: absolute;
   right: 33px;
   top: 50px;
 }
 .photoWrapper .photo>img{
-  width: 108px;
-  height: 142px;
+  width: 80px;
+  height: 110px;
 }
 
 .line{
   width: 100%;
   height: 0px;
   border: .9px dotted #111;
-  margin-top: 35px;
+  margin-top: 10px;
+}
+.experience{
+  margin-top: 15px;
 }
 
 /* 技能介绍及其他 */
@@ -121,28 +123,95 @@ header .photoWrapper{
   display: flex;
 }
 .introduction .skills{
-  width: 45%;
+  width: 48%;
   flex-grow: 1;
-  padding-right:20px;
 }
-.introduction span{
-  padding: 3px 12px;
-  background-color: #5d9a9d;
+.skills>ul{
+  margin-top: 8px
+}
+.skills li {
+  margin: 2px 0;
+}
+.skills li span{
+  display: inline-block;
+  padding-right: 10px; 
+  font-weight: bold;
 }
 .introduction .others{
-  width: 45%;
+  width: 52%;
   flex-grow: 1;
   padding-left:20px;
   word-wrap: normal;
   white-space:  normal;
   word-break: break-all;
 }
-.introduction .others div{
-  text-align: justify;
+.others{
+  display: flex;
+  flex-direction: column;
 }
-/* 项目展示 */
-.presentation span{
-  
+.block1{
+  flex-grow: 2;
+}
+.introduction .othersHeader,.ability{
   padding: 3px 12px;
   background-color: #5d9a9d;
+}
+.othersHeaders{
+  margin-bottom:8px;
+}
+.introduction .others .papers{
+  padding: 1px 0; 
+  font-weight: bold;
+}
+.introduction .others .paper{
+  text-align: justify;
+  margin-top: 2px;
+}
+/* 项目展示 */
+.presentation{
+  padding-top:3px
+}
+.presentation .present{
+  padding: 3px 12px;
+  background-color: #5d9a9d;
+  
+}
+.presentation li{
+  margin:5px 0 0 0;
+  position: relative;
+}
+.presentation li .product-wrapper{
+  
+}
+.product-wrapper div{
+  padding-top: 2px;
+}
+.presentation li .QR-code{
+  position: absolute;
+  top: -5px;
+  right: 15px;
+}
+.QR-code img{
+  width:100px;
+  height: 100px;
+}
+.keyWords{
+  color: #005662;
+}
+.code-color{
+  color: #56c8d8;
+}
+
+.duty{
+  font-weight: bold;
+  
+}
+.space{
+  margin:3px 0;
+}
+.describe{
+  margin:3px 0 3px 1.5em;
+}
+.indent{
+  padding-left: 2em;
 }
